@@ -1,1 +1,1 @@
- echo -e "R" \n
+ R \n
