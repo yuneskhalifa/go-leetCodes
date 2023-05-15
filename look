@@ -1,1 +1,3 @@
- find . -type f \( -name 'a*' -o -name 'z' -o -name 'z*a' \) -o -name ',*'
+find . -type f -name 'a*' -o -name ','
+find . -type f -name 'z' -o -name ',*'
+find . -type f -name 'z*a' -o -name ','
