@@ -7,14 +7,14 @@ func PrintComb() {
 		for b := a + 1; b <= '8'; b++ {
 			for c := b + 1; c <= '9'; c++ {
 				if a != b && b != c && c != a {
-					z01.printRune(a)
-					z01.printRune(b)
-					z01.printRune(c)
+					z01.PrintRune(a)
+					z01.PrintRune(b)
+					z01.PrintRune(c)
 					if a == '7' && b == '8' && c == '9' {
 						break
 					}
-					z01.printRune(',')
-					z01.printRune(' ')
+					z01.PrintRune(',')
+					z01.PrintRune(' ')
 
 				}
 			}
