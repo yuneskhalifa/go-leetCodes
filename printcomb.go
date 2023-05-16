@@ -20,5 +20,5 @@ func PrintComb() {
 			}
 		}
 	}
-	z01.printRune('\n')
+	z01.PrintRune('\n')
 }
