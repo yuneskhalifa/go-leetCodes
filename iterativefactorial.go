@@ -1,11 +1,12 @@
-package piscine 
-func IterativeFactorial(nb int)int  {
-	factorial:=1
+package piscine
 
-	for i:=nb ; i>=1 ; i--{
-	factorial=factorial*i
+func IterativeFactorial(nb int) int {
+	factorial := 1
+
+	for i := nb; i >= 1; i-- {
+		factorial = factorial * i
 
 	}
-return factorial
+	return factorial
 
 }
