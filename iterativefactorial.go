@@ -5,8 +5,6 @@ func IterativeFactorial(nb int) int {
 
 	for i := nb; i >= 1; i-- {
 		factorial = factorial * i
-
 	}
 	return factorial
-
 }
