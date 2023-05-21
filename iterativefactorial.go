@@ -7,7 +7,7 @@ func IterativeFactorial(nb int) int {
 		for i := nb; i >= 1; i-- {
 			factorial *= i
 		}
-		return x
+		return factorial
 	}
 	if nb >= 26 || nb < 0 {
 		return 0
