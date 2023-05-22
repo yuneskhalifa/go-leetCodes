@@ -1,11 +1,6 @@
-package piscine
+package main
 
 func FirstRune(s string) rune {
-	for i, r := range s {
-		if r != utf8.RuneError {
-			return r
-		}
-	}
-
-	return 0
+	s1 := []rune(s)
+	return rune(s1[0])
 }
