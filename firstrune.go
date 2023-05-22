@@ -1,8 +1,11 @@
 package piscine
 
-import "unicode/utf8"
-
 func FirstRune(s string) rune {
-	r, size := utf8.DecodeRuneInString(s)
-	return r
+	for i, r := range s {
+		if r != utf8.RuneError {
+			return r
+		}
+	}
+
+	return 0
 }
