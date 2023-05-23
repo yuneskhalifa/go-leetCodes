@@ -1,17 +1,25 @@
 package piscine
 
 func Capitalize(s string) string {
-	var result []rune
-	for i, c := range s {
-		if c >= 'a' && c <= 'z' {
-			if i == 0 || s[i-1] < 'a' || s[i-1] > 'z' {
-				result = append(result, c-32)
-			} else {
-				result = append(result, c)
-			}
-		} else {
-			result = append(result, c)
+	runes := []rune(s)
+	str := ""
+	cap := true
+
+	for index, c := range runes {
+		if c >= 'A' && c <= 'Z' {
+			runes[index] = c + ('a' - 'A')
 		}
 	}
-	return string(result)
+	for index, c := range runes {
+		if (c >= 'a' && c <= 'z') || ('0' <= c && c <= '9') {
+			if cap && (c >= 'a' && c <= 'z') {
+				runes[index] = c - ('a' - 'A')
+			}
+			cap = false
+		} else {
+			cap = true
+		}
+		str += string(runes[index])
+	}
+	return str
 }
