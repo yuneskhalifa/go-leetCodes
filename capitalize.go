@@ -5,7 +5,7 @@ func Capitalize(s string) string {
 	for i, c := range s {
 		if c >= 'a' && c <= 'z' {
 			if i == 0 || s[i-1] < 'a' || s[i-1] > 'z' {
-				result = append(result, byte(c-32))
+				result = append(result, c-32)
 			} else {
 				result = append(result, c)
 			}
