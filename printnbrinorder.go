@@ -3,22 +3,18 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
-	var digits []int
+	if n == 0 {
+		z01.PrintRune('0')
+		return
+	}
+	var d [10]int
 	for n > 0 {
-		digits = append(digits, n%10)
+		d[n%10]++
 		n /= 10
 	}
-	for i := 0; i < len(digits); i++ {
-		for j := i + 1; j < len(digits); j++ {
-			if digits[i] > digits[j] {
-				var temp int
-				temp = digits[i]
-				digits[i] = digits[j]
-				digits[j] = temp
-			}
+	for i := 0; i < 10; i++ {
+		for j := 0; j < d[i]; j++ {
+			z01.PrintRune(rune('0' + i))
 		}
-	}
-	for _, d := range digits {
-		z01.PrintRune(d)
 	}
 }
