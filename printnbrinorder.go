@@ -1,6 +1,6 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
 	var digits []int
@@ -19,6 +19,6 @@ func PrintNbrInOrder(n int) {
 		}
 	}
 	for _, d := range digits {
-		fmt.Print(d)
+		z01.PrintRune(d)
 	}
 }
