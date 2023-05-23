@@ -1,7 +1,7 @@
 package piscine
 
 func Capitalize(s string) string {
-	var result []byte
+	var result []rune
 	for i, c := range s {
 		if c >= 'a' && c <= 'z' {
 			if i == 0 || s[i-1] < 'a' || s[i-1] > 'z' {
