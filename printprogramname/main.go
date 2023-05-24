@@ -1,7 +1,10 @@
-package main 
-import ( "fmt"
- 		"os"
+package main
+
+import (
+	"fmt"
+	"os"
 )
-func main(){
+
+func main() {
 	fmt.Printf(os.Args[0])
 }
