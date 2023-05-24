@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/01-edu/z01"
+	"github.com/01-edu/z01.PrintRune"
 	"os"
 )
 
@@ -11,5 +11,4 @@ func main() {
 		z01.PrintRune(i)
 	}
 	z01.PrintRune('\n')
-
 }
