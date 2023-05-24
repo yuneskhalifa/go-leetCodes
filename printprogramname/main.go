@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
 	"os"
 )
 
 func main() {
-	fmt.Printf(os.Args[0])
+	z01.PrintRune(os.Args[0])
 }
