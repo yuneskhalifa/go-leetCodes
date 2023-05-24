@@ -4,11 +4,14 @@ import (
 	"os"
 
 	"github.com/01-edu/z01"
+
+	"path/filepath"
 )
 
 func main() {
-	name := []rune(os.Args[0])
-	for i := 0; i < len(name); i++ {
-		z01.PrintRune(name[i])
+	programName := filepath.Base(os.Args[0])
+	for _, char := range programName {
+		z01.PrintRune(char)
 	}
+	z01.PrintRune('\n')
 }
