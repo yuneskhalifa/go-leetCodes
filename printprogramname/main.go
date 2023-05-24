@@ -6,5 +6,8 @@ import (
 )
 
 func main() {
-	z01.PrintRune(os.Args[0])
+	name := []rune(os.Args[0])
+	for i := 0; i < len(name); i++ {
+		z01.PrintRune(name[i])
+	}
 }
