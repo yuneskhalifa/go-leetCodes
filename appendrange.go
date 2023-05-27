@@ -13,5 +13,4 @@ func AppendRange(min int, max int) []int {
 		x = append(x, i)
 	}
 	return x
-
 }
