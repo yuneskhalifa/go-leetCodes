@@ -1,9 +1,5 @@
 package piscine
 
-import (
-	"fmt"
-)
-
 func AppendRange(min int, max int) []int {
 	var x []int
 	if min >= max {
