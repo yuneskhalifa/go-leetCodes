@@ -24,6 +24,7 @@ func PrintInt(nbr int) {
 	}
 	z01.PrintRune(x)
 }
+
 func converToString(str string) {
 	s := []rune(str)
 	for index := range s {
