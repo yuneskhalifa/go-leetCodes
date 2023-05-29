@@ -25,7 +25,6 @@ func main() {
 	ad := len(os.Args[1:])
 	if isEven(ad) == true {
 		printStr("I have an even number of arguments")
-
 	} else {
 		printStr("I have an odd number of arguments")
 	}
