@@ -1,9 +1,7 @@
 package piscine
 
-import "fmt"
-
 func PrintNbr(b int) {
-	fmt.Print(b)
+	Print(b)
 }
 
 func ForEach(f func(int), a []int) {
