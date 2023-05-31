@@ -10,6 +10,16 @@ func main() {
 	if len(arguments) != 3 {
 		return
 	}
+	for _, jh := range arguments[0] {
+		if !(jh >= '0' && jh <= '9') {
+			return
+		}
+	}
+	for _, jh := range arguments[2] {
+		if !(jh >= '0' && jh <= '9') {
+			return
+		}
+	}
 	if Atoi(arguments[0]) <= -9223372036854775807 || Atoi(arguments[0]) >= 9223372036854775807 {
 		return
 	}
