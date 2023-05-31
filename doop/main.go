@@ -46,6 +46,7 @@ func main() {
 		return
 	}
 }
+
 func Atoi(s string) int {
 	runes := []rune(s)
 	nb := 0
