@@ -11,12 +11,12 @@ func main() {
 		return
 	}
 	for _, jh := range arguments[0] {
-		if !(jh >= '0' && jh <= '9') {
+		if !(jh >= '0' && jh <= '9') && (jh != '-') {
 			return
 		}
 	}
 	for _, jh := range arguments[2] {
-		if !(jh >= '0' && jh <= '9') {
+		if !(jh >= '0' && jh <= '9') && (jh != '-') {
 			return
 		}
 	}
