@@ -1,6 +1,6 @@
 package piscine
 
-func BTreeApplyByLevel(root *TreeNode, f func(...interface{}) (int, error)) {
+func BTreeApplyPostorder(root *TreeNode, f func(...interface{}) (int, error)) {
 	h := BTreeLevelCount(root)
 	for i := 0; i < h; i++ {
 		applyLevel(root, i, f)
