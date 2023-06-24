@@ -18,15 +18,3 @@ func applyLevel(root *TreeNode, level int, f func(...interface{}) (int, error)) 
 		applyLevel(root.Right, level-1, f)
 	}
 }
-
-func BTreeLevelCount(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-	left := BTreeLevelCount(root.Left)
-	right := BTreeLevelCount(root.Right)
-	if left > right {
-		return left + 1
-	}
-	return right + 1
-}
