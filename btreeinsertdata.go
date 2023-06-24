@@ -6,7 +6,6 @@ type TreeNode struct {
 }
 
 func BTreeInsertData(root *TreeNode, data string) *TreeNode {
-
 	if root == nil {
 		return &TreeNode{Data: data}
 	}
